@@ -1,0 +1,26 @@
+[04-May-2025 02:20:18 America/Boise] PHP Warning:  A non-numeric value encountered in /home4/jurashsa/public_html/functions.php on line 438
+[04-May-2025 02:20:18 America/Boise] PHP Warning:  A non-numeric value encountered in /home4/jurashsa/public_html/functions.php on line 450
+[04-May-2025 02:20:18 America/Boise] PHP Warning:  A non-numeric value encountered in /home4/jurashsa/public_html/functions.php on line 450
+[04-May-2025 02:27:02 America/Boise] PHP Warning:  Trying to access array offset on value of type bool in /home4/jurashsa/public_html/single-page.php on line 18
+[04-May-2025 02:27:02 America/Boise] PHP Warning:  Trying to access array offset on value of type bool in /home4/jurashsa/public_html/single-page.php on line 25
+[04-May-2025 02:27:02 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND tr_pages.tr_page =  AND tr_pages.tr_lang = 'ar' LIMIT 1' at line 1 in /home4/jurashsa/public_html/functions.php:1119
+Stack trace:
+#0 /home4/jurashsa/public_html/functions.php(1119): PDOStatement->execute()
+#1 /home4/jurashsa/public_html/single-page.php(28): getPageByID(Object(PDO), NULL, 'ar')
+#2 {main}
+  thrown in /home4/jurashsa/public_html/functions.php on line 1119
+[04-May-2025 02:32:47 America/Boise] PHP Warning:  Trying to access array offset on value of type bool in /home4/jurashsa/public_html/single-page.php on line 18
+[04-May-2025 02:32:47 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/jurashsa/public_html/single-page.php:18) in /home4/jurashsa/public_html/functions.php on line 116
+[04-May-2025 02:32:47 America/Boise] PHP Warning:  Trying to access array offset on value of type bool in /home4/jurashsa/public_html/single-page.php on line 25
+[04-May-2025 02:32:47 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND tr_pages.tr_page =  AND tr_pages.tr_lang = 'ar' LIMIT 1' at line 1 in /home4/jurashsa/public_html/functions.php:1119
+Stack trace:
+#0 /home4/jurashsa/public_html/functions.php(1119): PDOStatement->execute()
+#1 /home4/jurashsa/public_html/single-page.php(28): getPageByID(Object(PDO), NULL, 'ar')
+#2 {main}
+  thrown in /home4/jurashsa/public_html/functions.php on line 1119
+[04-May-2025 02:32:47 America/Boise] PHP Warning:  A non-numeric value encountered in /home4/jurashsa/public_html/functions.php on line 438
+[04-May-2025 02:32:47 America/Boise] PHP Warning:  A non-numeric value encountered in /home4/jurashsa/public_html/functions.php on line 450
+[04-May-2025 02:32:47 America/Boise] PHP Warning:  A non-numeric value encountered in /home4/jurashsa/public_html/functions.php on line 450
+[04-May-2025 02:38:13 America/Boise] PHP Warning:  A non-numeric value encountered in /home4/jurashsa/public_html/functions.php on line 438
+[04-May-2025 02:38:13 America/Boise] PHP Warning:  A non-numeric value encountered in /home4/jurashsa/public_html/functions.php on line 450
+[04-May-2025 02:38:13 America/Boise] PHP Warning:  A non-numeric value encountered in /home4/jurashsa/public_html/functions.php on line 450

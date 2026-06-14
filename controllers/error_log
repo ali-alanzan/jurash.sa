@@ -1,0 +1,9 @@
+[19-Sep-2022 10:05:34 America/Boise] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in /home4/jurashsa/public_html/classes/phpmailer/vendor/phpmailer/phpmailer/src/PHPMailer.php:2024
+Stack trace:
+#0 /home4/jurashsa/public_html/classes/phpmailer/vendor/phpmailer/phpmailer/src/PHPMailer.php(1844): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home4/jurashsa/public_html/classes/phpmailer/vendor/phpmailer/phpmailer/src/PHPMailer.php(1587): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 19 S...', '<!DOCTYPE HTML ...')
+#2 /home4/jurashsa/public_html/classes/phpmailer/vendor/phpmailer/phpmailer/src/PHPMailer.php(1423): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home4/jurashsa/public_html/functions.php(1352): PHPMailer\PHPMailer\PHPMailer->send()
+#4 /home4/jurashsa/public_html/controllers/contact-form.php(76): sendMail(Array, '<!DOCTYPE HTML ...', 'jurash.com@gmai...', 'Agencya CMS', 'Notification', 'false')
+#5 {main}
+  thrown in /home4/jurashsa/public_html/classes/phpmailer/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 2024

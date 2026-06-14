@@ -1,0 +1,42 @@
+Options -MultiViews
+RewriteEngine On
+
+RewriteRule ^index index.php [L]
+RewriteRule ^error error.php [L]
+RewriteRule ^offline offline.php [L]
+RewriteRule ^signin signin.php [L]
+RewriteRule ^signup signup.php [L]
+RewriteRule ^signout signout.php [L]
+RewriteRule ^forgot forgot.php [L]
+RewriteRule ^profile profile.php [L]
+RewriteRule ^reset reset.php [L]
+RewriteRule ^print print.php [L]
+
+RewriteRule ^property/([a-zA-Z0-9_-]+) single-property.php?id=$1&slug=$2&%{QUERY_STRING} [L]
+RewriteRule ^post/([a-zA-Z0-9_-]+) single-post.php?id=$1&slug=$2&%{QUERY_STRING} [L]
+
+# If the request is not for a valid directory
+RewriteCond %{REQUEST_FILENAME} !-d
+# If the request is not for a valid file
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^([^/]+)/?$ single-page.php?slug=$1&%{QUERY_STRING} [L,QSA]
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+
+</IfModule>
+<IfModule lsapi_module>
+
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74___lsphp .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
